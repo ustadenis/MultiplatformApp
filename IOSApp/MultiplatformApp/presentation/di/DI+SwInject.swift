@@ -8,7 +8,7 @@
 
 
 import SwinjectStoryboard
-//import MultiplatformModule
+//import CommonModule
 
 extension SwinjectStoryboard {
     

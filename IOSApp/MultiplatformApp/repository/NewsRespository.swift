@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import MultiplatformModule
+//import CommonModule
 //
 //typealias Serialization = [String : Any]
 //

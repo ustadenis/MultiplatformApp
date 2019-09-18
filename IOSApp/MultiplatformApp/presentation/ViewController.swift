@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import MultiplatformModule
+//import CommonModule
 
 class ViewController: UIViewController {
     

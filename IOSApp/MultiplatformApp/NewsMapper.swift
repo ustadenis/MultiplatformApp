@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import MultiplatformModule
+//import CommonModule
 //
 //class NewsMapper: Mapper {
 //    

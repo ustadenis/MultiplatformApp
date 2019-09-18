@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333FC5E9232AD1C9000D95E2 /* CommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333FC5E8232AD1C9000D95E2 /* CommonModule.framework */; };
-		333FC5EA232AD1C9000D95E2 /* CommonModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 333FC5E8232AD1C9000D95E2 /* CommonModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33EB6CC42326641B00BB181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB6CC32326641B00BB181F /* AppDelegate.swift */; };
 		33EB6CC62326641B00BB181F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB6CC52326641B00BB181F /* ViewController.swift */; };
 		33EB6CC92326641B00BB181F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EB6CC72326641B00BB181F /* Main.storyboard */; };
@@ -22,20 +20,6 @@
 		33EB6CED2327F36700BB181F /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB6CEC2327F36700BB181F /* Mapper.swift */; };
 		5A3BACA847948FD30F91C227 /* Pods_MultiplatformApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51478B70593A15C21BF4CAF0 /* Pods_MultiplatformApp.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		333FC5E6232ACF11000D95E2 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				333FC5EA232AD1C9000D95E2 /* CommonModule.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E772C201F8ADD882AC493DD /* Pods-MultiplatformApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplatformApp.debug.xcconfig"; path = "Target Support Files/Pods-MultiplatformApp/Pods-MultiplatformApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,7 +47,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3BACA847948FD30F91C227 /* Pods_MultiplatformApp.framework in Frameworks */,
-				333FC5E9232AD1C9000D95E2 /* CommonModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33EB6CD22326641D00BB181F /* Build configuration list for PBXNativeTarget "MultiplatformApp" */;
 			buildPhases = (
-				33EB6CDA23269D7900BB181F /* ShellScript */,
 				16AE4831B5E4F9B0910520EF /* [CP] Check Pods Manifest.lock */,
 				33EB6CBC2326641B00BB181F /* Sources */,
 				33EB6CBD2326641B00BB181F /* Frameworks */,
 				33EB6CBE2326641B00BB181F /* Resources */,
 				3CF8528159E7079D970E3DCB /* [CP] Embed Pods Frameworks */,
-				333FC5E6232ACF11000D95E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,23 +262,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		33EB6CDA23269D7900BB181F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd $SRCROOT/../../common1/Common/common/build/xcode-frameworks\n./gradlew :common:packForXcode\n";
 		};
 		3CF8528159E7079D970E3DCB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -393,7 +357,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "../../common1/Common/common/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -455,7 +419,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "../../common1/Common/common/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

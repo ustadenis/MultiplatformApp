@@ -23,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		0E772C201F8ADD882AC493DD /* Pods-MultiplatformApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplatformApp.debug.xcconfig"; path = "Target Support Files/Pods-MultiplatformApp/Pods-MultiplatformApp.debug.xcconfig"; sourceTree = "<group>"; };
-		333FC5E8232AD1C9000D95E2 /* CommonModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonModule.framework; path = "../../common1/Common/common/build/xcode-frameworks/CommonModule.framework"; sourceTree = "<group>"; };
 		33EB6CC02326641B00BB181F /* MultiplatformApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplatformApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EB6CC32326641B00BB181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33EB6CC52326641B00BB181F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +63,6 @@
 		33EB6CB72326641B00BB181F = {
 			isa = PBXGroup;
 			children = (
-				333FC5E8232AD1C9000D95E2 /* CommonModule.framework */,
 				33EB6CC22326641B00BB181F /* MultiplatformApp */,
 				33EB6CC12326641B00BB181F /* Products */,
 				7A45539996C4F7253A15E85A /* Pods */,

@@ -1,0 +1,6 @@
+framework module Pods_MultiplatformApp {
+  umbrella header "Pods-MultiplatformApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

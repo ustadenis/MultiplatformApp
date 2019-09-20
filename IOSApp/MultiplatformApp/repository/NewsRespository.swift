@@ -16,7 +16,7 @@ import Foundation
 //    private let newsMapper: NewsMapper = NewsMapper()
 //
 //    func retrieveNews() -> [News] {
-//        let url = URL(string: "https://newsapi.org/v2/everything?q=bitcoin&from=2019-08-10&sortBy=publishedAt&apiKey=d2cb4413e0024edeabe6c45d7844c291")!
+//        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d2cb4413e0024edeabe6c45d7844c291")!
 //
 //        let session = URLSession(configuration: .ephemeral, delegate: nil, delegateQueue: .main)
 //        var result: [NewsResponse] = []

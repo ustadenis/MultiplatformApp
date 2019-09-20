@@ -9,6 +9,6 @@ class NewsApi(
 ) : INewsApi by newsApi
 
 interface INewsApi {
-    @GET("everything?q=bitcoin&from=2019-08-10&sortBy=publishedAt&apiKey=d2cb4413e0024edeabe6c45d7844c291")
+    @GET("top-headlines?country=us&category=business&apiKey=d2cb4413e0024edeabe6c45d7844c291")
     fun getNewsAsync(): Deferred<NewsResponse>
 }
